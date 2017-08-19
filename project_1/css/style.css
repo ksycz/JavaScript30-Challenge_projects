@@ -1,0 +1,71 @@
+html {
+  font-size: 10px;
+  background: url(http://subtlepatterns.com/patterns/tree_bark.png) bottom center;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    color: #2f4550;
+    font-size: 3rem;
+}
+
+@media screen and (min-width: 800px) {
+	  h1 {
+      font-size: 5rem;
+      margin-bottom: -100px;
+    }
+}
+    
+.keys {
+  display: block;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+	  .keys {
+      display: flex;
+      flex: 1;
+      float: center;
+    }
+}
+
+
+.key {
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .1s ease;
+  width: 10rem;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #85bdbf;
+  box-shadow: 0 .7rem #2f4550, 10px 9px 10px rgba(0,0,0,.5);
+  font-weight: 700;
+}
+
+.playing {
+  transform: scale(1.1);
+  box-shadow: none;
+  
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
